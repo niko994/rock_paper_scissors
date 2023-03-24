@@ -45,7 +45,7 @@ function playRound(playerSelection,computerChoice) {
 
 function game() {
     for (let i = 1; i < 6; i++) {
-        console.log("Round" + i)
+        console.log("Round " + i)
         let playerSelection = getPlayerChoice();
         let computerChoice = getComputerChoice();
         console.log("computer chose " + computerChoice)
@@ -63,7 +63,7 @@ function game() {
 }
 
 function gameResult () {
-    if (userCounter > computerCounter && i == 5) {
+    if (userCounter > computerCounter) {
         console.log("You win the game")
     } else if (userCounter == computerCounter) { 
         console.log("it's a draw")

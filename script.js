@@ -12,7 +12,7 @@ function getComputerChoice () {
     }
 }
 
-function getPlayerChoice () {
+/*function getPlayerChoice () {
     let playerSelection = prompt('Do you choose Rock, Paper or Scissors?').toLowerCase()
           if (playerSelection === 'rock' || playerSelection === 'paper' || playerSelection === 'scissors') {
               console.log("You chose " + playerSelection);
@@ -21,9 +21,11 @@ function getPlayerChoice () {
               console.log('Error! Pick Rock, Paper or Scissors')
               return getPlayerChoice()
           }
-  }
+  }*/
 
 function playRound(playerSelection,computerChoice) {
+    console.log("Player = " + playerSelection)
+    console.log("Computer = " + computerChoice)
     if (playerSelection === computerChoice) {
         return "it's a draw" 
     } else if (playerSelection == "scissors" && computerChoice == "rock" ) {
@@ -43,7 +45,7 @@ function playRound(playerSelection,computerChoice) {
     }
 }
 
-function game() {
+/*function game() {
     for (let i = 1; i < 6; i++) {
         console.log("Round " + i)
         let playerSelection = getPlayerChoice();
@@ -60,9 +62,9 @@ function game() {
             console.log("User score : " + userCounter + " Computer score : " + computerCounter)
         }
     }
-}
+}*/
 
-function gameResult () {
+/*function gameResult () {
     if (userCounter > computerCounter) {
         console.log("You win the game")
     } else if (userCounter == computerCounter) { 
@@ -70,12 +72,24 @@ function gameResult () {
     } else {
         console.log("You lose the game")
     }
-}
+}*/
+
+
+// UI //
+
+document.getElementById("rockButton")
+document.getElementById("paperButton")
+document.getElementById("scissorsButton")
+
+
+rockButton.addEventListener("click", () => console.log(playRound("rock",computerChoice)))
+paperButton.addEventListener("click", () => console.log(playRound("paper",computerChoice)))
+scissorsButton.addEventListener("click", () => console.log(playRound("scissors",computerChoice)))
 
 let computerChoice = getComputerChoice ();
 let userCounter = 0
 let computerCounter = 0
 let i = 1
 
-game()
-console.log(gameResult())
+
+/*console.log(gameResult())*/

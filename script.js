@@ -24,6 +24,7 @@ function getComputerChoice () {
   }*/
 
 function playRound(playerSelection,computerChoice) {
+    
     console.log("Player = " + playerSelection)
     console.log("Computer = " + computerChoice)
     if (playerSelection === computerChoice) {
@@ -90,6 +91,3 @@ let computerChoice = getComputerChoice ();
 let userCounter = 0
 let computerCounter = 0
 let i = 1
-
-
-/*console.log(gameResult())*/

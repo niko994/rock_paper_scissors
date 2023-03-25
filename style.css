@@ -1,0 +1,28 @@
+/* Style css */
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#playerSelection {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#computerSelection {
+    display: flex;
+    flex-direction: column;
+
+}
+
+img {
+    max-width: 100%;  
+    height: 500px;  
+}
